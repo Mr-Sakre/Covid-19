@@ -1,0 +1,204 @@
+<html>
+<head>
+	<title> COVID-19 </title>
+	
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+    <script LANGUAGE="JavaScript">
+        function ValidateForm(form) {
+            ErrorText = "";
+            if ((form.Q1[0].checked == false) && (form.Q1[1].checked == false)) {
+                alert("Please choose your Answer: Yes or No");
+                return false;
+            }
+            if ((form.Q2[0].checked == false) && (form.Q2[1].checked == false)) {
+                alert("Please choose your Answer: Yes or No");
+                return false;
+            }
+            if ((form.Q3[0].checked == false) && (form.Q3[1].checked == false)) {
+                alert("Please choose your Answer: Yes or No");
+                return false;
+            }
+            if ((form.Q4[0].checked == false) && (form.Q4[1].checked == false)) {
+                alert("Please choose your Answer: Yes or No");
+                return false;
+            }
+            if ((form.Q5[0].checked == false) && (form.Q5[1].checked == false)) {
+                alert("Please choose your Answer: Yes or No");
+                return false;
+            }
+            if ((form.Q6[0].checked == false) && (form.Q6[1].checked == false)) {
+                alert("Please choose your Answer: Yes or No");
+                return false;
+            }
+            if ((form.Q7[0].checked == false) && (form.Q7[1].checked == false)) {
+                alert("Please choose your Answer: Yes or No");
+                return false;
+            }
+            if ((form.Q1[0].checked == true) && (form.Q2[0].checked == true) && (form.Q3[0].checked == false) && (form.Q4[0].checked == true) && (form.Q5[0].checked == true) && (form.Q6[0].checked == true) &&  (form.Q7[0].checked == true)) {
+                window.location = "ResultSuccess.html";
+                return true;
+            }
+            if ((form.Q1[1].checked == true) && (form.Q2[1].checked == true) && (form.Q3[1].checked == true) && (form.Q4[1].checked == true) && (form.Q5[1].checked == true) && (form.Q6[1].checked == true) && (form.Q7[1].checked == true)) {
+                window.location = "ResultFailure.html";
+                return true;
+            }
+            if (ErrorText = "") { form.submit() }
+        }
+</script>
+	<!--<script language="javascript">
+	    function check() {
+	        if (document.getElementById("Q1").required = true) {
+	            alert("PLEASE SELECT Yes/No");
+	            document.admin.uname.focus();
+	            return false;
+	        }
+	        if (document.admin.Q2.value == "") {
+	            alert("PLEASE SELECT Yes/No");
+	            document.admin.uname.focus();
+	            return false;
+	        }
+	        if (document.admin.Q3.value == "") {
+	            alert("PLEASE SELECT Yes/No");
+	            document.admin.uname.focus();
+	            return false;
+	        }
+	        if (document.admin.Q3.value == "") {
+	            alert("PLEASE SELECT Yes/No");
+	            document.admin.uname.focus();
+	            return false;
+	        }
+	        if (document.admin.Q4.value == "") {
+	            alert("PLEASE SELECT Yes/No");
+	            document.admin.uname.focus();
+	            return false;
+	        }
+	        if (document.admin.Q5.value == "") {
+	            alert("PLEASE ENTER USERNAME");
+	            document.admin.uname.focus();
+	            return false;
+	        }
+	        if (document.admin.Q6.value == "") {
+	            alert("PLEASE SELECT Yes/No");
+	            document.admin.uname.focus();
+	            return false;
+	        }
+	        if (document.admin.Q7.value == "") {
+	            alert("PLEASE SELECT Yes/No");
+	            document.admin.uname.focus();
+	            return false;
+	        }
+//	        if (document.covidtest.Q1.value == "Yes" && document.covidtest.Q2.value == "Yes" && document.covidtest.Q3.value == "Yes" && document.covidtest.Q4.value == "Yes" && document.covidtest.Q5.value == "Yes" && document.covidtest.Q6.value == "Yes" && document.covidtest.Q7.value == "Yes") {
+//	            return true;
+//	            alert("successfully login");
+//	            window.location = "ResultSuccess.html";
+//	        }
+//	        else {
+//	            
+//	            document.admin.uname.focus();
+//	            return false;
+//                 window.location = "covidtest.html";
+//	        }
+	    }
+</script>-->
+</head>
+<body>
+	
+	<div class="top">
+		<div>
+		 Contact Us +91 96366 20000 / 01 | covid@hospital.com 
+		</div>
+	</div>
+	
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td width="600px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> COVID-  </font><font color="#000"> 19</font> </td>
+					<td> <br> <br>
+						<font size="4px"> 
+							<a href="index.html">HOME</a> 
+							<a href="about.html">ABOUT US</a>  
+							<a href="service.html">INSTRUCTIONS</a>
+							<a href="doctor.html">HOSPITALS</a> 
+							<a href="contact.html">CONTACT US</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	
+	
+	<div class="bottom">
+    <form name="feedback" action="#" method=post>
+Are you Suffering from cough ?<br>
+ <input type="radio" name="Q1" value="Male"> Yes
+<input type="radio" name="Q1" value="Female"> No<br><br>
+Are you feeling Difficulty in Breathing ?<br>
+ <input type="radio" name="Q2" value="Male"> Yes
+<input type="radio" name="Q2" value="Female"> No<br><br>
+Have you returned from any other country after after January 15,2020?<br>
+ <input type="radio" name="Q3" value="Male"> Yes
+<input type="radio" name="Q3" value="Female"> No<br><br>
+Have you been in contact with any person who has had a recent travel history from any other country ?<br>
+ <input type="radio" name="Q4" value="Male"> Yes
+<input type="radio" name="Q4" value="Female"> No<br><br>
+Are you Home Quarantined?<br>
+ <input type="radio" name="Q5" value="Male"> Yes
+<input type="radio" name="Q5" value="Female"> No<br><br>
+Are you suffering from Sore throat? <br>
+<input type="radio" name="Q6" value="Male"> Yes
+<input type="radio" name="Q6" value="Female"> No<br><br>
+Are you Suffering from Fever ?<br>
+ <input type="radio" name="Q7" value="Male"> Yes
+<input type="radio" name="Q7" value="Female"> No<br><br>
+<input type="button" name="SubmitButton" value="Submit" onClick="ValidateForm(this.form)">
+<input type="reset" value="Reset">
+</form>
+  
+
+	</div>
+	
+	<div class="bottom">
+		<div>
+			<table border="0">
+				<tr>
+					<td width="700px">
+						<!--<font color="#000">------------ </font> --><br> <br>
+
+					<!--<font color="#000" size="6px"> Our Department </font> <br> <br>-->
+
+					<!--<ul>
+					<li> DENTAL Care
+					<li> OTOLOGY
+					<li> CARDIAC
+					<li> HEPATOLOGY
+					<li> ORTHOPEDICS
+					<li> GASTROENTEROLOGY
+					<li> OUTPATIENT
+					<li> MENTAL HEALTH
+					</ul>-->
+
+
+<br>
+ </td>
+					
+					
+					<td style="padding-left:20px;"> </td>
+				</tr>
+			
+				
+			</table>
+		</div>
+	</div>
+	
+	
+	<div class="nav_down">
+		<div>
+		 &copy; Covid-19
+		</div>
+	</div>
+    </body>
+    </html>
+	

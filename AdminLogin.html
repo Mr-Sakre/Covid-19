@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+	<!--<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="css/style.css" type="text/css" rel="stylesheet">-->
+<script language="javascript">
+function check()
+{
+ if(document.admin.uname.value=="")
+{
+alert("PLEASE ENTER USERNAME");
+document.admin.uname.focus();
+return false;
+}
+if(document.admin.pass.value=="")
+{
+alert("PLEASE ENTER password");
+document.admin.uname.focus();
+return false;
+}
+if(document.admin.uname.value=="admin" && document.admin.pass.value=="1234")
+{
+return true;
+alert("successfully login");
+}
+else
+{
+alert("please enter valid username and password");
+document.admin.uname.focus();
+return false;
+}
+}
+</script>
+</head>
+<body>
+	
+	
+	<div class="logo">
+		<div>
+<!--			<table>
+				<tr>
+					<td width="" style="font-size:50px;font-family:forte;"> <font color="#428bca"> COVID- </font><font color="#000"> 19</font> </td>
+					<td> <br> <br>
+						<font size="4px"> 
+							<a href="index.html">HOME</a> 
+							<a href="login.html">LOGIN</a>
+							<a href="about.html">ABOUT US</a>  
+							<a href="service.html">SERVICE</a>
+							<a href="doctor.html">HOSPITALS</a> 
+							<a href="patient.html">PATIENT</a>
+							<a href="contact.html">CONTACT US</a>
+						</font>
+					</td>
+				</tr>
+			</table>-->
+		</div>
+	</div>
+	
+
+
+
+
+<center>
+<div class="login">
+ <form name="admin" action="covidtest.html" method="post"> 
+<h1>USER-LOGIN</h1>
+
+User Name <input type="text" name="uname"/ ><br>
+<br/>
+&nbsp;password  <input type="password" name="pass"/ ><br>
+<br/>
+<input type="submit" value="login" width="200x" onclick="return check()"/> 
+<p>Use Following details to login</p>
+<p>username:admin and password:1234</p>
+</div>
+</body>
+</html>
